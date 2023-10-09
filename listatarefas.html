@@ -7,8 +7,18 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="listadetarefas.css">
   </head>
   <body>
-    <div><h1>Lista de Tarefas</h1></div>
+    <div>
+        <h1>Lista de Tarefas</h1>
+        <div>
+            <input type="text" id="tarefa" placeholder="Digite uma tarefa">
+            <button onclick="adicionartarefas()">Adicionar</button>
+        </div>
+        <ul id="listaTarefas"></ul>
+    </div>
+    <ul id="novaTarefa"></ul>
+    <script src="listadetarefas.js"></script>
   </body>
 </html>

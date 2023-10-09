@@ -1,6 +1,10 @@
 body{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
 }
 h1{
     color: green;
+}
+.tarefa2{
+    color:brown;
 }
