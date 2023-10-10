@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Lista de Tarefas</title>
-    <link rel="stylesheet" href="listadetarefas.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="listadetarefas.css"
+    />
+  </head>
 
-<body>
-    <div>
+  <body>
+    <section id="main">
+      <div>
         <h1>Lista de Tarefas</h1>
-        <h2>Seu Nível Atual</h2>
         <div id="barraNivel">
-            <div id="nivelPreenchido"></div>
-            <span id="nivelAtual">Nível: 1</span>
+          <span id="nivelAtual">Nível: 1</span>
+          <br />
+          <div id="nivelPreenchido"></div>
         </div>
-        <div>
-            <input type="text" id="tarefa" placeholder="Digite uma tarefa">
-            <button onclick="adicionartarefas()">Adicionar</button>
+        <div id="taskContainer">
+          <ul
+            id="listaTarefas"
+            class="lista1"
+          ></ul>
         </div>
-        <ul id="listaTarefas" class="lista1"></ul>
-    </div>
-    <ul id="novaTarefa"></ul>
-    <script src="listadetarefas.js"></script>
-</body>
-
+        <ul id="novaTarefa"></ul>
+      </div>
+      <div>
+        <input
+          type="text"
+          id="tarefa"
+          placeholder="Digite uma tarefa"
+        />
+        <button onclick="adicionartarefas()">Adicionar</button>
+      </div>
+      <script src="listadetarefas.js"></script>
+    </section>
+  </body>
 </html>
