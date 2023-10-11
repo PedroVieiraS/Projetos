@@ -40,7 +40,7 @@ function concluirTarefa(botao) {
 }
 
 function excluirTarefa(botao) {
-  var li = botao.parentElement;
+  var li = botao.parentElement.parentElement;
   var ul = li.parentElement;
   ul.removeChild(li);
   if (li.style.backgroundColor === "green") {
